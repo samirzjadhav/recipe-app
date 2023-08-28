@@ -568,7 +568,43 @@ video {
   }
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 77 29 / var(--tw-bg-opacity));
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90vw;
+  max-width: 512px;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  transform: translate(-50%, -50%);
+}
+
+.search-container {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 9fr 3fr;
+}
+
+.search-container input {
+  border-style: none;
+  padding: 12px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-bottom: 2px solid #202030;
 }

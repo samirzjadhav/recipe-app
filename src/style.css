@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#F14D1D];
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @apply bg-[#ffffff] text-lg px-[48px] py-[44px] w-[90vw] max-w-[512px] left-[50%] top-[50%] absolute rounded-xl;
+  transform: translate(-50%, -50%);
+}
+
+.search-container {
+  @apply w-full grid gap-[20px];
+  grid-template-columns: 9fr 3fr;
+}
+
+.search-container input {
+  @apply text-lg p-[12px] outline-none border-none;
+  border-bottom: 2px solid #202030;
+}
