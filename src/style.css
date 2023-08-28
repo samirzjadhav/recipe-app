@@ -8,8 +8,9 @@ body {
 }
 
 .container {
-  @apply bg-[#ffffff] text-lg px-[48px] py-[44px] w-[90vw] max-w-[32em] left-[50%] top-[50%] absolute rounded-xl;
+  @apply bg-[#ffffff]  text-base px-[48px] py-[44px] w-[90vw] max-w-[32em] left-[50%] top-[50%] absolute rounded-xl;
   transform: translate(-50%, -50%);
+  @apply sm:text-lg;
 }
 
 .search-container {
@@ -46,4 +47,28 @@ img {
 
 #show-recipe {
   @apply text-base relative left-[75%] py-[16px] px-[12px] bg-[#f4c531] border-none top-[24px] rounded-md font-semibold;
+}
+
+#recipe {
+  @apply absolute bg-[#fff] min-h-[100%] w-[100%] top-0 left-0 z-[2] rounded-xl border-none;
+}
+
+#recipe pre {
+  @apply text-[#303040] text-xl;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 2.5em 1.2em 1.2em 1.2em;
+}
+
+#hide-recipe {
+  @apply text-lg relative w-[1.8em] h-[1.8em] bg-[#f4c531] border-none top-[20px] left-[90%] rounded-md;
+}
+
+ul {
+  @apply text-lg relative grid grid-cols-[auto] gap-y-[12px] gap-x-[18px] capitalize text-[#303040];
+  padding: 1.2em 0 0 1.2em;
+}
+
+h3 {
+  @apply text-center mt-[28px] text-[#303040];
 }
