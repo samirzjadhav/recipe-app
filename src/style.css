@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  @apply bg-[#ffffff] text-lg px-[48px] py-[44px] w-[90vw] max-w-[512px] left-[50%] top-[50%] absolute rounded-xl;
+  @apply bg-[#ffffff] text-lg px-[48px] py-[44px] w-[90vw] max-w-[32em] left-[50%] top-[50%] absolute rounded-xl;
   transform: translate(-50%, -50%);
 }
 
@@ -20,4 +20,30 @@ body {
 .search-container input {
   @apply text-lg p-[12px] outline-none border-none;
   border-bottom: 2px solid #202030;
+}
+
+.search-container button {
+  @apply text-lg bg-[#f4c531] font-medium border-none rounded-md;
+}
+
+img {
+  @apply block w-[50%];
+  margin: 1.8em auto 0 auto;
+}
+
+.details {
+  @apply bg-[#f4c531] relative text-center py-[12px];
+  margin: -4.3em 0 0 0;
+}
+
+.details h2 {
+  @apply text-lg font-semibold;
+}
+
+.details h4 {
+  @apply text-base font-normal;
+}
+
+#show-recipe {
+  @apply text-base relative left-[75%] py-[16px] px-[12px] bg-[#f4c531] border-none top-[24px] rounded-md font-semibold;
 }
