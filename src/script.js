@@ -36,5 +36,19 @@ searchBtn.addEventListener("click", () => {
       }
     }
     console.log(ingredients);
+
+    result.innerHTML = `
+      <img src=${myMeal.strMealThumb} />
+      <div class="details">
+        <h2>${myMeal.strMeal}</h2>
+        <h4>${myMeal.strArea}</h4>
+      </div>
+      <div id="ingredient-con"></div>
+      <div id="recipe">
+        <button id="hide-recipe">X</button>
+        <pre id="instructions">${myMeal.strInstructions}</pre>
+      </div>
+      <button id="show-recipe">View Recipe</button>
+    `;
   }
 });
