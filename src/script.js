@@ -65,6 +65,7 @@ searchBtn.addEventListener("click", () => {
         showRecipe.addEventListener("click", () => {
           recipe.style.display = "block";
         });
+        console.log(showRecipe);
       })
       .catch(() => {
         result.innerHTML = `<h3>Invalid Input</h3>`;

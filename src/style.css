@@ -7,28 +7,30 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  @apply bg-[#ffffff]  text-base px-[48px] py-[44px] w-[90vw] max-w-[32em] left-[50%] top-[50%] absolute rounded-xl;
-  transform: translate(-50%, -50%);
-  @apply sm:text-lg;
+@layer components {
+  .container {
+    @apply bg-[#ffffff] text-[14px]  px-[24px] py-[20px] w-[380px]  left-[50%] top-[50%] absolute rounded-xl;
+    transform: translate(-50%, -50%);
+    @apply sm:text-lg sm:px-[48px] sm:py-[44px] sm:w-[60%];
+  }
 }
-
 .search-container {
   @apply w-full grid gap-[20px];
   grid-template-columns: 9fr 3fr;
 }
 
 .search-container input {
-  @apply text-lg p-[12px] outline-none border-none;
+  @apply text-lg p-[12px] outline-none border-none w-full;
   border-bottom: 2px solid #202030;
 }
 
 .search-container button {
-  @apply text-lg bg-[#f4c531] font-medium border-none rounded-md;
+  @apply text-sm bg-[#f4c531] font-medium border-none rounded-md;
+  @apply sm:text-lg;
 }
 
 img {
-  @apply block w-[50%];
+  @apply block w-[60%];
   margin: 1.8em auto 0 auto;
 }
 
@@ -46,11 +48,12 @@ img {
 }
 
 #show-recipe {
-  @apply text-base relative left-[75%] py-[16px] px-[12px] bg-[#f4c531] border-none top-[24px] rounded-md font-semibold;
+  @apply text-base relative top-[8px] left-[66%] py-[16px] px-[12px] bg-[#f4c531] border-none  rounded-md font-semibold;
+  @apply sm:top-[24px] sm:left-[75%];
 }
 
 #recipe {
-  @apply absolute bg-[#fff] min-h-[100%] w-[100%] top-0 left-0 z-[2] rounded-xl border-none;
+  @apply absolute bg-[#fff] min-h-[100%] w-[100%] top-0 left-0 z-[2] rounded-xl hidden;
 }
 
 #recipe pre {
@@ -65,8 +68,9 @@ img {
 }
 
 ul {
-  @apply text-lg relative grid grid-cols-[auto] gap-y-[12px] gap-x-[18px] capitalize text-[#303040];
+  @apply text-lg relative grid gap-y-[12px] gap-x-[18px] capitalize text-[#303040];
   padding: 1.2em 0 0 1.2em;
+  grid-template-columns: auto auto;
 }
 
 h3 {
