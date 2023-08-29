@@ -9,7 +9,7 @@ body {
 
 @layer components {
   .container {
-    @apply bg-[#ffffff] text-[14px]  px-[24px] py-[20px] w-[380px]  left-[50%] top-[50%] absolute rounded-xl;
+    @apply bg-[#ffffff] text-[14px]  px-[24px] py-[20px] w-[90%]  left-[50%] top-[50%] absolute rounded-xl;
     transform: translate(-50%, -50%);
     @apply sm:text-lg sm:px-[48px] sm:py-[44px] sm:w-[60%];
   }
